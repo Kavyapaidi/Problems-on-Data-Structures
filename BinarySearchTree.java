@@ -1,6 +1,8 @@
-//Insert element into BST
-//elements in inorder traversal are in increasing order
+//Insert elementS into BST
+//Inorder Traversal of BST
 //search a value/key in BST
+//check whether bst is valid or not
+//-----------------------------------------------------------
 public class BinarySearchTree {
     private class TreeNode
     {
@@ -13,6 +15,7 @@ public class BinarySearchTree {
         }
     }TreeNode root;
     //--------------------------------------------------------
+    //Insert elementS into BST
    public void insert(int value)
     {
         root=insert(root,value);
@@ -33,6 +36,7 @@ public class BinarySearchTree {
         return root;
     }
     //--------------------------------------------------
+    //elements in inorder traversal are in increasing order
     public TreeNode search(TreeNode root,int key)//returns node
     {
         if(root==null || root.data==key)
