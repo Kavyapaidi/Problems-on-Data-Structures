@@ -1,3 +1,4 @@
+//Basic operations performed on LinkedList
 public class LinkedList {
         public class Node
         {
@@ -11,6 +12,8 @@ public class LinkedList {
 
         }
     Node head;
+        //--------------------------------------------------------------
+        //insert node at starting position of linked list
         public void insertatstart(int val)
         {
             Node new_node=new Node(val);
@@ -32,7 +35,8 @@ public class LinkedList {
             }
             last.next=new_node;
         }
-        //-------------------------------------
+        //---------------------------------------------------------
+        //insert node at middele position of linked list
         public void insertmid(Node prev,int val)
         {
             Node new_node=new Node(val);
@@ -42,7 +46,8 @@ public class LinkedList {
             }
             new_node.next=prev.next;
             prev.next=new_node;
-        }
+        //------------------------------------------------------------
+        //Delete node in the linked list
         public void delete(int key)
         {
             Node temp,prev;
@@ -64,6 +69,8 @@ public class LinkedList {
             }
             prev.next=temp.next;
         }
+        //------------------------------------------------------------
+        //printing the values in a linked list
     public void print()
         {
             Node tempnode=head;
@@ -73,6 +80,8 @@ public class LinkedList {
                 tempnode=tempnode.next;
             }
         }
+         //---------------------------------------------------------------
+         //main function 
         public static void main(String[] args)
         {
             LinkedList l1=new LinkedList();
